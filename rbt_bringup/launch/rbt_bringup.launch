@@ -6,7 +6,7 @@
    <arg name="sim" default="true" />
    
    <!-- If using a real controller, look on /dev/ttyUSB0 by default -->
-   <arg name="port" default="/dev/ttyUSB0" />
+   <arg name="port" default="/dev/ttyUSB0" >
    
    <!-- Load the URDF/Xacro model of our robot -->
    <param name="robot_description" command="$(find xacro)/xacro.py '$(find rbt_description)/urdf/rbt.urdf'" />
