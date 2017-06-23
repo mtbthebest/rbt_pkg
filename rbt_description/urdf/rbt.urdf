@@ -1,0 +1,149 @@
+<robot
+  name="rbt_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00054504 0.28428 0.17235"
+        rpy="0 0 0" />
+      <mass
+        value="66.903" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbt_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbt_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="r_wheel_link">
+    <inertial>
+      <origin
+        xyz="6.9389E-17 -1.1102E-16 -0.0125"
+        rpy="0 0 0" />
+      <mass
+        value="0.14346" />
+      <inertia
+        ixx="4.9667E-34"
+        ixy="7.3104E-35"
+        ixz="2.0565E-36"
+        iyy="3.4665E-34"
+        iyz="6.7953E-35"
+        izz="2.1459E-34" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbt_description/meshes/r_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbt_description/meshes/r_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.178 -0.152 0.0806"
+      rpy="1.5708 -1.5378 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="r_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="l_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.0125 1.8874E-15 5.2736E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.14346" />
+      <inertia
+        ixx="3.3984E-34"
+        ixy="-2.1839E-34"
+        ixz="-1.0729E-34"
+        iyy="2.6559E-34"
+        iyz="-1.3554E-34"
+        izz="4.4818E-34" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbt_description/meshes/l_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rbt_description/meshes/l_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.178 -0.152 0.0806"
+      rpy="-0.24564 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="l_wheel_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+</robot>
