@@ -1,6 +1,6 @@
 <launch>
     <!-- Load the URDF/Xacro model of our robot -->
-    <arg name="urdf_file" default="$(find xacro)/xacro.py '$(find rbt_description)/urdf/rbt.urdf'" />
+    <arg name="urdf_file" default="$(find xacro)/xacro.py '$(find rbt_description)/urdf/rbt.xacro'" />
     <param name="robot_description" command="$(arg urdf_file)" />
     
     <!-- Publish the robot state -->

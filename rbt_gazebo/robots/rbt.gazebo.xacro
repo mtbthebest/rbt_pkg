@@ -1,5 +1,5 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name= "rbt" >
-  <xacro:include filename="$(find rbt_description)/urdf/rbt.urdf" />
+  
 
   <!-- Base is modeled as a big tub sitting on floor, with two wheels -->
   <gazebo reference="base_link">
