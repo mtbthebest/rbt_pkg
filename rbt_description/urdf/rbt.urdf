@@ -1,13 +1,23 @@
 <robot
   name="rbt_description">
+  <link name="base_footprint">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.001"/>
+      </geometry>
+      
+    </visual>
+  </link>
+  
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.00054504 0.28428 0.17235"
+        xyz="0.00101738010389675 0.274716843808839 -0.0788251259866206"
         rpy="0 0 0" />
       <mass
-        value="66.903" />
+        value="67.4974297376225" />
       <inertia
         ixx="0"
         ixy="0"
@@ -27,7 +37,7 @@
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -40,21 +50,26 @@
       </geometry>
     </collision>
   </link>
+  <joint name="base_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+  </joint>
   <link
     name="r_wheel_link">
     <inertial>
       <origin
-        xyz="6.9389E-17 -1.1102E-16 -0.0125"
+        xyz="-0.0125 -9.7145E-17 0"
         rpy="0 0 0" />
       <mass
         value="0.14346" />
       <inertia
-        ixx="4.9667E-34"
-        ixy="7.3104E-35"
-        ixz="2.0565E-36"
-        iyy="3.4665E-34"
-        iyz="6.7953E-35"
-        izz="2.1459E-34" />
+        ixx="3.1851E-35"
+        ixy="4.3235E-35"
+        ixz="3.7109E-35"
+        iyy="1.1543E-34"
+        iyz="-1.5741E-35"
+        izz="1.2026E-34" />
     </inertial>
     <visual>
       <origin
@@ -67,7 +82,7 @@
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -84,30 +99,30 @@
     name="r_wheel_joint"
     type="continuous">
     <origin
-      xyz="-0.178 -0.152 0.0806"
-      rpy="1.5708 -1.5378 1.5708" />
+      xyz="-0.178 0.098 0.0666"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="r_wheel_link" />
     <axis
-      xyz="0 0 1" />
+      xyz="1 0 0" />
   </joint>
   <link
     name="l_wheel_link">
     <inertial>
       <origin
-        xyz="0.0125 1.8874E-15 5.2736E-16"
+        xyz="0.0125 1.8874E-15 4.996E-16"
         rpy="0 0 0" />
       <mass
         value="0.14346" />
       <inertia
-        ixx="3.3984E-34"
-        ixy="-2.1839E-34"
-        ixz="-1.0729E-34"
-        iyy="2.6559E-34"
-        iyz="-1.3554E-34"
-        izz="4.4818E-34" />
+        ixx="6.3702E-36"
+        ixy="1.2358E-35"
+        ixz="3.0982E-36"
+        iyy="1.1089E-34"
+        iyz="-1.5026E-36"
+        izz="1.1651E-34" />
     </inertial>
     <visual>
       <origin
@@ -120,7 +135,7 @@
       <material
         name="">
         <color
-          rgba="0 0 0 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -137,8 +152,8 @@
     name="l_wheel_joint"
     type="continuous">
     <origin
-      xyz="0.178 -0.152 0.0806"
-      rpy="-0.24564 0 0" />
+      xyz="0.178 0.098 0.0666"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
