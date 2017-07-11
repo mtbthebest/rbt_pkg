@@ -3,7 +3,9 @@
 import rospy
 from geometry_msgs.msg import Twist
 from math import pi
-from  std_m
+from  std_msgs.msg import String
+
+
 class Trip():
     def __init__(self):
         rospy.init_node('trip', anonymous=False)
@@ -37,10 +39,9 @@ class Trip():
             rospy.sleep(2.0)
 
             self.move_cmd.angular.z =  angular_vel
-
-
-            ticks = int (angular_duration * rate)
             
+            ticks = int (angular_duration * rate)
+                 
             for t in range(ticks):
                 self.cmd_vel_pub.publish(self.move_cmd)
                 r.sleep()
