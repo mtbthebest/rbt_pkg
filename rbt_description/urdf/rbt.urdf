@@ -1,6 +1,5 @@
-<?xml version="1.0"?>
-<robot name="rbt" xmlns:xacro="http://www.ros.org/wiki/xacro">
- <xacro:include filename="$(find rbt_gazebo)/robots/rbt.gazebo.xacro" />
+
+<robot name="rbt" >
   <link
     name="base_link">
     <inertial>
@@ -8,14 +7,9 @@
         xyz="1.5170507548791E-17 -0.000197277236774495 0.0803276867224908"
         rpy="0 0 0" />
       <mass
-        value="190.047063870531" />
+        value="70.1294" />
       <inertia
-        ixx="0.00513222256327552"
-        ixy="1.43114686768087E-17"
-        ixz="3.46944695195361E-18"
-        iyy="0.0118016516978085"
-        iyz="-0.00113704440589145"
-        izz="0.0164025460146906" />
+       ixx="1.225" ixy="0.0099" ixz="0.0062" iyy="1.2853" iyz="-0.0034" izz="0.987" />
     </inertial>
     <visual>
       <origin
@@ -48,14 +42,9 @@
         xyz="0 0 0.015"
         rpy="0 0 0" />
       <mass
-        value="0.144199844682647" />
+        value="4.3542" />
       <inertia
-        ixx="0"
-        ixy="0"
-        ixz="0"
-        iyy="0"
-        iyz="0"
-        izz="0" />
+        ixx="0.0045" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.0045" />
     </inertial>
     <visual>
       <origin
@@ -101,14 +90,9 @@
         xyz="-5.55111512312578E-17 6.93889390390723E-18 -0.015"
         rpy="0 0 0" />
       <mass
-        value="0.144199844682647" />
+        value="4.3542" />
       <inertia
-        ixx="0"
-        ixy="0"
-        ixz="0"
-        iyy="0"
-        iyz="0"
-        izz="0" />
+        ixx="0.0045" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.0045" />
     </inertial>
     <visual>
       <origin

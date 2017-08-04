@@ -1,25 +1,20 @@
 <launch>
 
-  <arg name="paused" default="false"/>
-  <arg name="use_sim_time" default="true"/>
+  <arg name="robot" default="rbt"/>
+  <arg name="debug" default="false"/>
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
-  <arg name="debug" default="false"/>
-  
+
+  <!-- Start Gazebo with a blank world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="debug" value="$(arg debug)" />
     <arg name="gui" value="$(arg gui)" />
-    <arg name="paused" value="$(arg paused)"/>
-    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
     <arg name="headless" value="$(arg headless)"/>
   </include>
 
-  
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find rbt_description)/urdf/rbt.xacro'" /> 
-
-
-  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
-  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-	args="-urdf -model rbt -param robot_description"/> 
+  <!-- Oh, you wanted a robot? -->
+  <include file="$(find rbt_gazebo)/launch/include/$(arg robot).launch.xml" />
 
 </launch>
