@@ -17,7 +17,7 @@ import time
 import pickle
 
 
-def playGame(train_indicator=1):    #1 means Train, 0 means simply Run
+def playGame(train_indicator=0):    #1 means Train, 0 means simply Run
     BUFFER_SIZE = 2000
     BATCH_SIZE = 100
     GAMMA = 0.99
@@ -61,7 +61,7 @@ def playGame(train_indicator=1):    #1 means Train, 0 means simply Run
     # except:
     #     print("Cannot find the weight")
     
-    reward_output = open("/home/mtb/rbt_ws/src/ddpg/scripts/rewards.txt", 'wb')
+    reward_output = open("/home/mtb/rbt_ws/src/ddpg/scripts/rewards_test.txt", 'wb')
     iterations =0
     for i in range(episode_count):
 
