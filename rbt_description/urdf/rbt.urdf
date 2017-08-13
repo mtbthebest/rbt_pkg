@@ -47,14 +47,8 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <mass
-        value="0.38838" />
-      <inertia
-        ixx="0"
-        ixy="0"
-        ixz="0"
-        iyy="0"
-        iyz="0"
-        izz="0" />
+        value="3.8838" />
+     <inertia ixx="0.0045" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.0045" />
     </inertial>
     <visual>
       <origin
@@ -91,7 +85,7 @@
     <child
       link="l_wheel_link" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 1 0" />
   </joint>
   <link
     name="r_wheel_link">
@@ -100,14 +94,8 @@
         xyz="0 -2.7756E-17 0"
         rpy="0 0 0" />
       <mass
-        value="0.38838" />
-      <inertia
-        ixx="0"
-        ixy="0"
-        ixz="0"
-        iyy="0"
-        iyz="0"
-        izz="0" />
+        value="3.8838" />
+      <inertia ixx="0.0045" ixy="0" ixz="0" iyy="0.005" iyz="0" izz="0.0045" />
     </inertial>
     <visual>
       <origin
@@ -144,7 +132,7 @@
     <child
       link="r_wheel_link" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 1 0" />
   </joint>
   <link
     name="laser_link">
