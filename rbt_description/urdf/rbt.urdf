@@ -195,7 +195,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rbt_description/meshes/torso_link.STL" />
+          filename="package://rbt_description/meshes/torso_link.dae" />
       </geometry>
       <material
         name="">
@@ -241,7 +241,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rbt_description/meshes/shoulder_pan_link.STL" />
+          filename="package://rbt_description/meshes/shoulder_pan_link.dae" />
       </geometry>
       <material
         name="">
@@ -289,7 +289,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rbt_description/meshes/shoulder_lift_link.STL" />
+          filename="package://rbt_description/meshes/shoulder_lift_link.dae" />
       </geometry>
       <material
         name="">
@@ -338,7 +338,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rbt_description/meshes/upperarm_roll_link.STL" />
+          filename="package://rbt_description/meshes/upperarm_roll_link.dae" />
       </geometry>
       <material
         name="">
@@ -386,7 +386,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rbt_description/meshes/elbow_flex_link.STL" />
+          filename="package://rbt_description/meshes/elbow_flex_link.dae" />
       </geometry>
       <material
         name="">
@@ -434,7 +434,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rbt_description/meshes/forearm_roll_link.STL" />
+          filename="package://rbt_description/meshes/forearm_roll_link.dae" />
       </geometry>
       <material
         name="">
@@ -482,7 +482,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rbt_description/meshes/wrist_flex_link.STL" />
+          filename="package://rbt_description/meshes/wrist_flex_link.dae" />
       </geometry>
       <material
         name="">
@@ -530,7 +530,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rbt_description/meshes/wrist_roll_link.STL" />
+          filename="package://rbt_description/meshes/wrist_roll_link.dae" />
       </geometry>
       <material
         name="">
@@ -578,7 +578,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rbt_description/meshes/gripper_link.STL" />
+          filename="package://rbt_description/meshes/gripper_link.dae" />
       </geometry>
       <material
         name="">
@@ -624,7 +624,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rbt_description/meshes/l_gripper_link.STL" />
+          filename="package://rbt_description/meshes/l_gripper_link.dae" />
       </geometry>
       <material
         name="">
@@ -672,7 +672,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://rbt_description/meshes/r_gripper_link.STL" />
+          filename="package://rbt_description/meshes/r_gripper_link.dae" />
       </geometry>
       <material
         name="">
