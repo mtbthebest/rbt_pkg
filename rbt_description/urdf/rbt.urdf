@@ -7,7 +7,7 @@
         xyz="0.00249189384812189 -1.57266312588598E-10 0.132977386791425"
         rpy="0 0 0" />
       <mass
-        value="34.8310964963823" />
+        value="5.0" />
       <inertia
         ixx="0.169235422161565"
         ixy="-1.36500224779735E-11"
@@ -274,7 +274,7 @@
       <dynamics damping="1.0" />
     <limit effort="33.82" lower="-1.6056" upper="1.6056" velocity="1.256" />
   </joint>
-  <link
+<link
     name="shoulder_lift_link">
     <inertial>
       <origin
@@ -322,7 +322,7 @@
        <dynamics damping="1.0" />
     <limit effort="131.76" lower="-1.221" upper="1.518" velocity="1.454" />
   </joint>
-
+  <!--
   <link
     name="upperarm_roll_link">
     <inertial>
@@ -704,5 +704,5 @@
       xyz="0 1 0" />
     <dynamics damping="100.0" />
     <limit effort="60" lower="-0.005" upper="0.01" velocity="0.05" />
-  </joint>
+  </joint>-->
 </robot>
