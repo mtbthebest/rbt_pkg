@@ -38,7 +38,7 @@
   <gazebo reference="r_wheel_joint">
     <implicitSpringDamper>1</implicitSpringDamper>
   </gazebo>
-
+<!--
   <gazebo reference="forearm_roll_joint">
     <implicitSpringDamper>1</implicitSpringDamper>
   </gazebo>
@@ -64,7 +64,8 @@
     <minDepth>0.001</minDepth>
     <material>Gazebo/Grey</material>
   </gazebo>
-
+  
+-->
   <gazebo>
     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
 
