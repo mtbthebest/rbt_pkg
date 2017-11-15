@@ -76,26 +76,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        elbow_flex_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        forearm_roll_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        gripper_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        l_gripper_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         l_wheel_link:
           Alpha: 1
           Show Axes: false
@@ -106,42 +86,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        r_gripper_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         r_wheel_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        shoulder_lift_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        shoulder_pan_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        torso_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        upperarm_roll_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wrist_flex_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wrist_roll_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -159,33 +104,13 @@ Visualization Manager:
         All Enabled: false
         base_link:
           Value: false
-        elbow_flex_link:
-          Value: false
-        forearm_roll_link:
-          Value: false
-        gripper_link:
-          Value: false
-        l_gripper_link:
-          Value: false
         l_wheel_link:
           Value: false
         laser_link:
           Value: false
-        r_gripper_link:
-          Value: false
+        odom:
+          Value: true
         r_wheel_link:
-          Value: false
-        shoulder_lift_link:
-          Value: false
-        shoulder_pan_link:
-          Value: false
-        torso_link:
-          Value: false
-        upperarm_roll_link:
-          Value: false
-        wrist_flex_link:
-          Value: false
-        wrist_roll_link:
           Value: false
       Marker Scale: 1
       Name: TF
@@ -200,19 +125,8 @@ Visualization Manager:
             {}
           r_wheel_link:
             {}
-          torso_link:
-            shoulder_pan_link:
-              shoulder_lift_link:
-                upperarm_roll_link:
-                  elbow_flex_link:
-                    forearm_roll_link:
-                      wrist_flex_link:
-                        wrist_roll_link:
-                          gripper_link:
-                            l_gripper_link:
-                              {}
-                            r_gripper_link:
-                              {}
+        odom:
+          {}
       Update Interval: 0
       Value: true
     - Class: rviz/Marker
@@ -226,7 +140,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: base_link
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
@@ -259,10 +173,10 @@ Visualization Manager:
         Z: 0.250169
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 1.0098
+      Pitch: 0.4948
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.6525
+      Yaw: 1.3175
     Saved: ~
 Window Geometry:
   Displays:
@@ -281,4 +195,4 @@ Window Geometry:
     collapsed: true
   Width: 1533
   X: 57
-  Y: 46
+  Y: 36

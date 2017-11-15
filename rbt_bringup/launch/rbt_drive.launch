@@ -1,5 +1,0 @@
-<launch>
-  
-  <include file="$(find rbt_description)/launch/rbt_description.launch"/>
-  
-</launch>
