@@ -15,10 +15,10 @@
   <!-- Put a robot in gazebo, make it look pretty -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
         args="-urdf -x $(arg x) -y $(arg y) -z 0 -model rbt -param robot_description"/>
-    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+   <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"> 
     	
     	<param name="rate" value="20.0"/>
-    </node>
+    </node> -->
 
   <!-- Give this robot a serial number and version 
   <param name="robot/serial" value="ABCDEFGHIJKLMNOPQRSTUVWX" />
