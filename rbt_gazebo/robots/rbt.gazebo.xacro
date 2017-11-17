@@ -10,6 +10,7 @@
     <maxVel>10.0</maxVel>
     <minDepth>0.0005</minDepth>  
   </gazebo>
+
   <gazebo reference="r_wheel_link">
     <kp>500000.0</kp>
     <kd>10.0</kd>
@@ -20,6 +21,7 @@
     <minDepth>0.003</minDepth>
     <material>Gazebo/Blue</material>
   </gazebo>
+
   <gazebo reference="l_wheel_link">
     <kp>500000.0</kp>
     <kd>10.0</kd>
@@ -30,14 +32,14 @@
     <minDepth>0.003</minDepth>
     <material>Gazebo/Blue</material>
   </gazebo>
-<gazebo reference="l_wheel_joint">
-    <implicitSpringDamper>1</implicitSpringDamper>
-</gazebo>
-<gazebo reference="r_wheel_joint">
-    <implicitSpringDamper>1</implicitSpringDamper>
-</gazebo>
 
-<!--
+  <gazebo reference="l_wheel_joint">
+    <implicitSpringDamper>1</implicitSpringDamper>
+  </gazebo>
+  <gazebo reference="r_wheel_joint">
+    <implicitSpringDamper>1</implicitSpringDamper>
+  </gazebo>
+
   <gazebo>
     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
 
@@ -94,5 +96,4 @@
       </plugin>
     </sensor>
   </gazebo>
--->
 </robot>
